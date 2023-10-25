@@ -1,0 +1,14 @@
+C:\Users\birinci novbe\Desktop\Nihad\Arrays2\Arrays2\bin\Debug\net6.0\Arrays2.exe
+C:\Users\birinci novbe\Desktop\Nihad\Arrays2\Arrays2\bin\Debug\net6.0\Arrays2.deps.json
+C:\Users\birinci novbe\Desktop\Nihad\Arrays2\Arrays2\bin\Debug\net6.0\Arrays2.runtimeconfig.json
+C:\Users\birinci novbe\Desktop\Nihad\Arrays2\Arrays2\bin\Debug\net6.0\Arrays2.dll
+C:\Users\birinci novbe\Desktop\Nihad\Arrays2\Arrays2\bin\Debug\net6.0\Arrays2.pdb
+C:\Users\birinci novbe\Desktop\Nihad\Arrays2\Arrays2\obj\Debug\net6.0\Arrays2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\birinci novbe\Desktop\Nihad\Arrays2\Arrays2\obj\Debug\net6.0\Arrays2.AssemblyInfoInputs.cache
+C:\Users\birinci novbe\Desktop\Nihad\Arrays2\Arrays2\obj\Debug\net6.0\Arrays2.AssemblyInfo.cs
+C:\Users\birinci novbe\Desktop\Nihad\Arrays2\Arrays2\obj\Debug\net6.0\Arrays2.csproj.CoreCompileInputs.cache
+C:\Users\birinci novbe\Desktop\Nihad\Arrays2\Arrays2\obj\Debug\net6.0\Arrays2.dll
+C:\Users\birinci novbe\Desktop\Nihad\Arrays2\Arrays2\obj\Debug\net6.0\refint\Arrays2.dll
+C:\Users\birinci novbe\Desktop\Nihad\Arrays2\Arrays2\obj\Debug\net6.0\Arrays2.pdb
+C:\Users\birinci novbe\Desktop\Nihad\Arrays2\Arrays2\obj\Debug\net6.0\Arrays2.genruntimeconfig.cache
+C:\Users\birinci novbe\Desktop\Nihad\Arrays2\Arrays2\obj\Debug\net6.0\ref\Arrays2.dll
