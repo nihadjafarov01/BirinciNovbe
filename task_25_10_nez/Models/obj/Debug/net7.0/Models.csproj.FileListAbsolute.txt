@@ -1,0 +1,12 @@
+C:\Users\Birinci Novbe\Desktop\Nihad\task_25_10_nez\Models\bin\Debug\net7.0\Models.deps.json
+C:\Users\Birinci Novbe\Desktop\Nihad\task_25_10_nez\Models\bin\Debug\net7.0\Models.dll
+C:\Users\Birinci Novbe\Desktop\Nihad\task_25_10_nez\Models\bin\Debug\net7.0\Models.pdb
+C:\Users\Birinci Novbe\Desktop\Nihad\task_25_10_nez\Models\obj\Debug\net7.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Birinci Novbe\Desktop\Nihad\task_25_10_nez\Models\obj\Debug\net7.0\Models.AssemblyInfoInputs.cache
+C:\Users\Birinci Novbe\Desktop\Nihad\task_25_10_nez\Models\obj\Debug\net7.0\Models.AssemblyInfo.cs
+C:\Users\Birinci Novbe\Desktop\Nihad\task_25_10_nez\Models\obj\Debug\net7.0\Models.csproj.CoreCompileInputs.cache
+C:\Users\Birinci Novbe\Desktop\Nihad\task_25_10_nez\Models\obj\Debug\net7.0\Models.sourcelink.json
+C:\Users\Birinci Novbe\Desktop\Nihad\task_25_10_nez\Models\obj\Debug\net7.0\Models.dll
+C:\Users\Birinci Novbe\Desktop\Nihad\task_25_10_nez\Models\obj\Debug\net7.0\refint\Models.dll
+C:\Users\Birinci Novbe\Desktop\Nihad\task_25_10_nez\Models\obj\Debug\net7.0\Models.pdb
+C:\Users\Birinci Novbe\Desktop\Nihad\task_25_10_nez\Models\obj\Debug\net7.0\ref\Models.dll
