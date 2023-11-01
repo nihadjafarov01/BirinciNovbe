@@ -1,0 +1,12 @@
+C:\Users\Birinci Novbe\Desktop\Nihad\BirinciNovbe\task_01_11_prak\Core\bin\Debug\net7.0\Core.deps.json
+C:\Users\Birinci Novbe\Desktop\Nihad\BirinciNovbe\task_01_11_prak\Core\bin\Debug\net7.0\Core.dll
+C:\Users\Birinci Novbe\Desktop\Nihad\BirinciNovbe\task_01_11_prak\Core\bin\Debug\net7.0\Core.pdb
+C:\Users\Birinci Novbe\Desktop\Nihad\BirinciNovbe\task_01_11_prak\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Birinci Novbe\Desktop\Nihad\BirinciNovbe\task_01_11_prak\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
+C:\Users\Birinci Novbe\Desktop\Nihad\BirinciNovbe\task_01_11_prak\Core\obj\Debug\net7.0\Core.AssemblyInfo.cs
+C:\Users\Birinci Novbe\Desktop\Nihad\BirinciNovbe\task_01_11_prak\Core\obj\Debug\net7.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\Birinci Novbe\Desktop\Nihad\BirinciNovbe\task_01_11_prak\Core\obj\Debug\net7.0\Core.sourcelink.json
+C:\Users\Birinci Novbe\Desktop\Nihad\BirinciNovbe\task_01_11_prak\Core\obj\Debug\net7.0\Core.dll
+C:\Users\Birinci Novbe\Desktop\Nihad\BirinciNovbe\task_01_11_prak\Core\obj\Debug\net7.0\refint\Core.dll
+C:\Users\Birinci Novbe\Desktop\Nihad\BirinciNovbe\task_01_11_prak\Core\obj\Debug\net7.0\Core.pdb
+C:\Users\Birinci Novbe\Desktop\Nihad\BirinciNovbe\task_01_11_prak\Core\obj\Debug\net7.0\ref\Core.dll
