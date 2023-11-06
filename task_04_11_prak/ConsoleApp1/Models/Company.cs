@@ -1,4 +1,5 @@
 ﻿using ConsoleApp1.Exceptions;
+using System.Collections.Generic;
 
 namespace ConsoleApp1.Models
 {
@@ -12,29 +13,105 @@ namespace ConsoleApp1.Models
         }
         public Employee GetEmployeeById(int id)
         {
-            foreach (var item in employees)
+            #region Find
+            //Employee result = employees.Find(x => x.Id == id);
+            //if (result == null)
+            //{
+            //    Console.ForegroundColor = ConsoleColor.Red;
+            //    throw new EmployeeNotFound("Employee not found!");
+            //}
+            //else
+            //{
+            //    Console.ForegroundColor = ConsoleColor.Green;
+            //    return result;
+            //}
+            #endregion
+
+            #region SingleOrDefault
+            //Employee result = employees.SingleOrDefault(x => x.Id == id);
+            //if (result == null)
+            //{
+            //    Console.ForegroundColor = ConsoleColor.Red;
+            //    throw new EmployeeNotFound("Employee not found!");
+            //}
+            //else
+            //{
+            //    Console.ForegroundColor = ConsoleColor.Green;
+            //    return result;
+            //}
+            #endregion
+
+            #region FirstOrDefault
+            Employee result = employees.FirstOrDefault(x => x.Id == id);
+            if (result == null)
             {
-                if (item.Id == id)
-                {
-                    return item;
-                }
+                Console.ForegroundColor = ConsoleColor.Red;
+                throw new EmployeeNotFound("Employee not found!");
             }
-            throw new EmployeeNotFound("Employee not found!!!");
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                return result;
+            }
+            #endregion
         }
         public void UpdateEmployee(Employee employee)
         {
             
         } 
-        public void RemoveEmployee(Employee emp)
+        public void RemoveEmployee(int id)
         {
-            employees.Remove(emp);
+            #region Find
+            Employee result = employees.Find(x => x.Id == id);
+            if (result == null)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                throw new EmployeeNotFound("Employee not found!");
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Employee removed");
+                employees.Remove(result);
+            }
+            #endregion
+
+            #region SingleOrDefault
+            //Employee result = employees.SingleOrDefault(x => x.Id == id);
+            //if (result == null)
+            //{
+            //    Console.ForegroundColor = ConsoleColor.Red;
+            //    throw new EmployeeNotFound("Employee not found!");
+            //}
+            //else
+            //{
+            //    Console.ForegroundColor = ConsoleColor.Green;
+            //    Console.WriteLine("Employee removed");
+            //    employees.Remove(result);
+            //}
+            #endregion
+
+            #region FirstOrDefault
+            //Employee result = employees.FirstOrDefault(x => x.Id == id);
+            //if (result == null)
+            //{
+            //    Console.ForegroundColor = ConsoleColor.Red;
+            //    throw new EmployeeNotFound("Employee not found!");
+            //}
+            //else
+            //{
+            //    Console.ForegroundColor = ConsoleColor.Green;
+            //    Console.WriteLine("Employee removed");
+            //    employees.Remove(result);
+            //}
+            #endregion
         }
         public void GetEmployees()
         {
-            foreach (var item in employees)
+            employees.ForEach(delegate (Employee employee)
             {
-                Console.WriteLine(item);
-            }
+                Console.WriteLine(employee);
+            });
         }
     }
 }

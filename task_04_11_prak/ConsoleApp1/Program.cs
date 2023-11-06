@@ -32,12 +32,12 @@ internal class Program
             Company company1 = new Company();
             char option = '0';
             char option4 = '0';
-            Console.WriteLine("1. Create employee \n2. Get employee details by id \n3. Get all employees \n4. Update employee details id \n5. Delete employee records by id");
             do
             {
             try
             {
-                Console.WriteLine("1, 2, 3, 4 or 5 ?");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("1. Create employee \n2. Get employee details by id \n3. Get all employees \n4. Update employee details id \n5. Delete employee records by id");
                 option = Convert.ToChar(Console.ReadLine());
                 switch (option)
                 {
@@ -49,13 +49,12 @@ internal class Program
                         emp1.Surname = Console.ReadLine();
                         Console.Write("Age: ");
                         emp1.Age = Convert.ToByte(Console.ReadLine());
-                        Console.Write("Name: ");
                         company1.AddEmployee(emp1);
                         break;
                     case '2':
                         Console.WriteLine("Enter id: ");
                         int id = Convert.ToInt32(Console.ReadLine());
-                        company1.GetEmployeeById(id);
+                        Console.WriteLine(company1.GetEmployeeById(id)); 
                         break;
                     case '3':
                         company1.GetEmployees();
@@ -98,8 +97,8 @@ internal class Program
                     case '5':
                         Console.Write("Id: ");
                         id = Convert.ToInt32(Console.ReadLine());
-                        getEmp1 = company1.GetEmployeeById(id);
-                        company1.RemoveEmployee(getEmp1);
+                        //getEmp1 = company1.GetEmployeeById(id);
+                        company1.RemoveEmployee(id);
                         break;
                         }
                 }
