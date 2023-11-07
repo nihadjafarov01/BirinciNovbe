@@ -1,6 +1,6 @@
 ﻿namespace ConsoleApp1.Models
 {
-    internal class Person
+    public class Person
     {
         private static int _id = 1;
         public int Id { get; set; }

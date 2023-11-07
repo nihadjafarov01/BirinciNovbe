@@ -37,7 +37,7 @@ internal class Program
             try
             {
                 Console.ForegroundColor = ConsoleColor.White;
-                Console.WriteLine("1. Create employee \n2. Get employee details by id \n3. Get all employees \n4. Update employee details id \n5. Delete employee records by id");
+                Console.WriteLine("1. Create employee \n2. Get employee details by id \n3. Get all employees \n4. Update employee details id \n5. Delete employee records by id\n6. Get employee detals by value\n7. Get latest employees");
                 option = Convert.ToChar(Console.ReadLine());
                 switch (option)
                 {
@@ -49,20 +49,20 @@ internal class Program
                         emp1.Surname = Console.ReadLine();
                         Console.Write("Age: ");
                         emp1.Age = Convert.ToByte(Console.ReadLine());
-                        company1.AddEmployee(emp1);
+                        EmployeeService.AddEmployee(emp1);
                         break;
                     case '2':
                         Console.WriteLine("Enter id: ");
                         int id = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine(company1.GetEmployeeById(id)); 
+                        Console.WriteLine(EmployeeService.GetEmployeeById(id)); 
                         break;
                     case '3':
-                        company1.GetEmployees();
+                        EmployeeService.GetEmployees();
                         break;
                     case '4':
                         Console.WriteLine("Enter id: ");
                         id = Convert.ToInt32(Console.ReadLine());
-                        Employee getEmp1 = company1.GetEmployeeById(id);
+                        Employee getEmp1 = EmployeeService.GetEmployeeById(id);
                         //getEmp1.id
                         Console.WriteLine("What do you want to update? \n   1. Name\n   2. Gender\n   3. Salary\n   4. Position");
                         option4 = Convert.ToChar(Console.ReadLine());
@@ -72,7 +72,7 @@ internal class Program
                                 Console.Write("Name: ");
                                 string name = Console.ReadLine();
                                 getEmp1.Name = name;
-                                company1.UpdateEmployee(getEmp1);
+                                EmployeeService.UpdateEmployee(getEmp1);
                                 break;
                             case '2':
                                 Console.WriteLine("male, female or other ?");
@@ -80,17 +80,17 @@ internal class Program
                                 string genderStr = Console.ReadLine();
                                 Gender inputAsEnum = (Gender)Enum.Parse(typeof(Gender), genderStr);
                                 getEmp1.Gender = inputAsEnum;
-                                company1.UpdateEmployee(getEmp1);
+                                EmployeeService.UpdateEmployee(getEmp1);
                                 break;
                             case '3':
                                 Console.Write("Salary: ");
                                 decimal salary = Convert.ToDecimal(Console.ReadLine());
-                                company1.UpdateEmployee(getEmp1);
+                                EmployeeService.UpdateEmployee(getEmp1);
                                 break;
                             case '4':
                                 Console.Write("Position: ");
                                 string position = Console.ReadLine();
-                                company1.UpdateEmployee(getEmp1);
+                                EmployeeService.UpdateEmployee(getEmp1);
                                 break;
                         }
                         break;
@@ -98,7 +98,21 @@ internal class Program
                         Console.Write("Id: ");
                         id = Convert.ToInt32(Console.ReadLine());
                         //getEmp1 = company1.GetEmployeeById(id);
-                        company1.RemoveEmployee(id);
+                        EmployeeService.RemoveEmployee(id);
+                        break;
+                    case '6':
+                        Console.Write("Value: ");
+                        string value = Console.ReadLine();
+                        foreach (var item in (EmployeeService.GetEmployeesByValue(value)))
+                        {
+                            Console.WriteLine(item);
+                        }
+                        break;
+                    case '7':
+                        foreach (var item in EmployeeService.GetLatestEmployees())
+                        {
+                            Console.WriteLine(item);
+                        }                      
                         break;
                         }
                 }

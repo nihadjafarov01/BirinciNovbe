@@ -2,7 +2,7 @@
 {
     internal static class CompanyDatabase
     {
-        static List<Company> CompanyList = new List<Company>();
-        static List<Employee> EmployeeList = new List<Employee>();
+        public static List<Company> CompanyList = new List<Company>();
+        public static List<Employee> EmployeeList = new List<Employee>();
     }
 }
