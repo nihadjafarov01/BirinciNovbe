@@ -27,7 +27,7 @@ namespace ConsoleApp1.Services
 
             return Sb.ToString();
         }
-        public void Register(User user)
+        public static void Register(User user)
         {
             string hashed = sha256_hash(user.Password);
             string query = $"INSERT INTO Blogs VALUES (N'{user.Name}', N'{user.Surname}', {user.Password}";

@@ -12,6 +12,8 @@ Password nvarchar(256) not null
 CREATE TABLE Blogs(
 Id int identity primary key,
 Title nvarchar(100),
-Description nvarchar(300)
+Description nvarchar(300),
 UserId int references Users(Id)
 )
+
+select * from users
