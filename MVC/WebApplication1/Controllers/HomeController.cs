@@ -24,7 +24,21 @@ namespace WebApplication1.Controllers
             var dt = await SqlHelper.GetDatas("SELECT * FROM Users");
             return View(dt);
         }
-
+        public async Task<IActionResult> charts()
+        {
+            var dt = await SqlHelper.GetDatas("SELECT * FROM Users");
+            return View(dt);
+        }
+        public async Task<IActionResult> staticnav()
+        {
+            var dt = await SqlHelper.GetDatas("SELECT * FROM Users");
+            return View("layouts/staticnav", dt);
+        }
+        public async Task<IActionResult> lightnav()
+        {
+            var dt = await SqlHelper.GetDatas("SELECT * FROM Users");
+            return View("layouts/lightnav", dt);
+        }
         public IActionResult Privacy()
         {
             return View();

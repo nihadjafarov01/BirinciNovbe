@@ -5,7 +5,7 @@ namespace WebApplication1.Helpers
 {
     public class SqlHelper
     {
-        const string _connectionString = @"Server = DESKTOP-41FVTKL\SQLEXPRESS; Database = AzMB101_Nihad; Trusted_Connection=True;";
+        const string _connectionString = @"Server = LAPTOP-B0FK9J0C; Database = AzMB101_Nihad; Trusted_Connection=True;";
         
         public static async Task<DataTable> GetDatas(string query)
         {

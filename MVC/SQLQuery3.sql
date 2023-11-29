@@ -1,3 +1,6 @@
+CREATE DATABASE AzMB101_Nihad
+USE AzMB101_Nihad
+
 CREATE TABLE Users (
   Name VARCHAR(255),
   Position VARCHAR(255),
