@@ -8,12 +8,16 @@ namespace WebApplication1.Controllers
 {
     public class HomeController : Controller
     {
-        
-        
+        public PustokDbContext _context { get; set; }
+
+        public HomeController(PustokDbContext context)
+        {
+            _context = context;
+        }
+
         public async Task<IActionResult> Index()
         {
-            using PustokDbContext context = new PustokDbContext();
-            var sliders = await context.Sliders.ToListAsync();
+            var sliders = await _context.Sliders.ToListAsync();
             return View(sliders);
         }
 

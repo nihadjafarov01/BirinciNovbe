@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using WebApplication1.Contexts;
+
 namespace WebApplication1
 {
     public class Program
@@ -8,6 +11,10 @@ namespace WebApplication1
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddDbContext<PustokDbContext>(options =>
+            {
+                options.UseSqlServer(builder.Configuration["ConnectionStrings:MSSql"]);
+            });
 
             var app = builder.Build();
 

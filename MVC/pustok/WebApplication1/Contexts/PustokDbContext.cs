@@ -5,12 +5,7 @@ namespace WebApplication1.Contexts
 {
     public class PustokDbContext : DbContext
     {
+        public PustokDbContext(DbContextOptions opt) : base(opt) { }
         public DbSet<Slider> Sliders { get; set; }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer("Server = DESKTOP-41FVTKL\\SQLEXPRESS; Database = Pustok; Trusted_Connection=True;Encrypt=false;TrustServerCertificate=true;");
-            base.OnConfiguring(optionsBuilder);
-        }
-        
     }
 }
